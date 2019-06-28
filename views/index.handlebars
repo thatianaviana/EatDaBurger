@@ -1,34 +1,35 @@
 <header>
-	<h1>Eat Da Burger!</h1>
+	<h1>EAT DA BURGER!!! <i class="fas fa-hamburger"></i></h1>
+    <span class="fa fa-list-alt" aria-hidden="true" ></span> 
 </header><!-- /header -->
 
 <div class="wrapper">
 	<div id="create-burger">
 		<form action="/" method="POST">
 			<input id="burger-name" type="text" name="burger_name" placeholder="Create Da Burger">
-			<button id="submit-btn" type="submit">Wish Come True</button>
+			<button id="submit-btn" type="submit">Make Yo Burger</button>
 		</form>
 	</div>
 
 	<section id="burgers-container">
 		<div id="burgers-available">
-			<h2>Burgers Available To Put In Your Belly Now</h2>
+			<h2>Burgers To Put In Your Belly</h2>
 			{{#each burgers}}
 				{{#unless devoured}}
 				  <div class="burger">
 				    <form class="devour-burger-form" action="/{{id}}?_method=PUT" method="POST">
-				  		<button class="eat-btn btn-danger">Consume Calories</button>
+				  		<button class="eat-btn btn-danger">Devour It</button>
 				    </form>
-						{{burger_name}} <span>#{{id}}</span>
+						 <span class="itemNumber">{{id}}</span> {{burger_name}}
 				  </div>
 				{{/unless}}
 			{{/each}}
 		</div>
 		<div id="burgers-devoured">
-			<h2>Burger Heaven</h2>
+			<h2>Devoured Burgers</h2>
 			{{#each burgers}}
 				{{#if devoured}}
-				  <div class="burger">{{burger_name}} <span>#{{id}}</span></div>
+				  <span class="itemNumber">{{id}}</span><div class="burger"> {{burger_name}} </div>
 				{{/if}}
 			{{/each}}
 		</div>

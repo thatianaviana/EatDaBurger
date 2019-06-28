@@ -23,3 +23,4 @@ var burger = {
 
 // Export
 module.exports = burger;
+

@@ -2,26 +2,29 @@ body {
 	color: #333;
 	font-family: Helvetica, Arial, sans-serif;
 	margin: 0;
-	background: #eee;
+    background: #eee;
+    background-image: url(https://img.freepik.com/free-photo/three-hamburger-with-beef-meat-burger-fresh-vegetables-dark-background_2829-2665.jpg?size=626&ext=jpg);
 }
 
 header {
-	background: #333;
+	background: #384140;
 	margin: 0;
 	height: 60px;
 	display: flex;
-	align-items: center;
+    align-items: center;
+   
 }
 
 h1 {
 	margin: 0 0 0 100px;
 	color: #fff;
-	font-size: 30px;
+    font-size: 30px;
+    text-align: center;
 }
 
-span {
-	font-size: 0.85em;
-	background: #B31B1B;
+.itemNumber {
+	font-size: 13px;
+	background: #045951;
 	color: white;
 	padding: 3px 5px 3px 5px;
 	border-radius: 4px;
@@ -80,7 +83,8 @@ h1 {
 
 .eat-btn {
 	margin-right: 0.7em;
-	padding: 5px;
+    padding: 5px;
+    margin-bottom: 15px;
 }
 
 #submit-btn {
@@ -88,7 +92,7 @@ h1 {
 	font-size: 1.5em;
 	background: #38eeff;
 	border: none;
-	margin-left: -5px;
+	margin-left: 10px;
 }
 
 #burger-name {

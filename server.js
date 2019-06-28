@@ -10,13 +10,6 @@ var router = require("./controllers/burgers_controller.js");
 var app = express();
 var PORT = process.env.PORT || 3000;
 
-// Middleware - deleted all this info from 
-// app.use(methodOverride("_method"));
-// app.use(bodyParser.json());
-// app.use(bodyParser.urlencoded({ extended: true }));
-// app.use(bodyParser.text());
-// app.use(bodyParser.json({ type: "application/vnd.api+json" }));
-
 //Middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
