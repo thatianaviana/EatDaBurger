@@ -3,7 +3,9 @@
 ### Create custom burgers, eat burgers, and view burgers and best yet - DON'T WORRY ABOUT THE CALORIES!
 
 ## Live Link
+I am not sure why Heroku link and Github Links aren't working, but here's the screenshot from the HW in my computer:
 
+![Eat Da Burger](public/assets/img/eatdaburger.png)
 
 ## How it Works
 
